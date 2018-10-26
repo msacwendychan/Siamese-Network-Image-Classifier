@@ -12,20 +12,20 @@ Several types of trainings and testings were done on the original unwarped image
 The network was formed based on CNN sequential model that constructs of a linear stack of layers. 3 sets of convolutional layers and 2 sets of fully connected layers were implemented as the main architecture.
 The general architecture consists of:
 
-Layer                     | Size 
-------------------------- | ------------- 
-Conv2D                    | 16 x 5 x 5
-MaxPooling2D              | 2 x 2
-------------------------- | -------------
-Conv2D                    | 32 x 3 x 3
-MaxPooling2D              | 2 x 2
-------------------------- | -------------
-Conv2D + Dropout          | 64 x 3 x 3
-Flatten                   | n.a.
-------------------------- | -------------
-Fully Connected + Dropout | 576
-------------------------- | -------------
-Fully Connected           | 128
+Layer                     | Size           | Parameters
+------------------------- | -------------  | --------------------------------
+Conv2D                    | 16 x 5 x 5     | Stride = 1
+MaxPooling2D              | 2 x 2          | Stride = 2
+------------------------- | -------------  | --------------------------------
+Conv2D                    | 32 x 3 x 3     | Stride = 1
+MaxPooling2D              | 2 x 2          | Stride = 2
+------------------------- | -------------  | --------------------------------
+Conv2D + Dropout          | 64 x 3 x 3     | Stride = 1; Dropout rate = 0.25
+Flatten                   | n.a.           | n.a.
+------------------------- | -------------  | --------------------------------
+Fully Connected + Dropout | 576            | Dropout rate = 0.25
+------------------------- | -------------  | --------------------------------
+Fully Connected           | 128            | n.a.
 
 ## Data Source
 
