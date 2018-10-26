@@ -44,7 +44,7 @@ Pull requests and improvement are welcome. :) Please make sure to include commit
 
 ## Credits
 
-My team: Liying Shi and Zhiyi Wu
+Team: Liying Shi and Zhiyi Wu
 
 
 
