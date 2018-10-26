@@ -25,10 +25,10 @@ def euclidean_distance(vects):
     return K.sqrt(K.maximum(K.sum(K.square(x - y), axis=1, keepdims=True), K.epsilon()))
 
 #------------------------------------------------------------------------------
-def contrastive_loss(y_true, y_pred):
+def contrustive_loss(y_true, y_pred):
 
     '''
-    Contrastive loss from Hadsell-et-al.'06
+    Contrustive loss from Hadsell-et-al.'06
     http://yann.lecun.com/exdb/publis/pdf/hadsell-chopra-lecun-06.pdf
     @param
       y_true : true label 1 for positive pair, 0 for negative pair
